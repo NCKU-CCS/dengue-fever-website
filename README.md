@@ -12,3 +12,8 @@ Using Taiwan goverment open data, develop a web visualization website to assist 
     $ http-server -p 8000
   
   Open your browser and go to http://localhost:8000
+  
+## Update Data
+
+  - [tainan_scripts](https://github.com/NCKU-CCS/dengue-fever-website/tree/master/tainan_scripts)
+  - [kaohsiung_scripts] (https://github.com/NCKU-CCS/dengue-fever-website/tree/master/kaohsiung_scripts)
