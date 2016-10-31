@@ -1,9 +1,14 @@
 # dengue-fever-website
 
-### Develop
+Using Taiwan goverment open data, develop a web visualization website to assist dengue-fever prevention.
 
-  $ npm install
-  $ npm install -g http-server
-  $ http-server -p 8000
+
+## Develop
+
+  Clone this repo, then
+
+    $ npm install
+    $ npm install -g http-server
+    $ http-server -p 8000
   
-  open your browser to http://localhost:8000
+  Open your browser and go to http://localhost:8000
