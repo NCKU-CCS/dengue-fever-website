@@ -1,0 +1,64 @@
+extends ../layout
+
+block content
+  link(rel='stylesheet', href='./stylesheets/dynamic.css', type='text/css')
+  style.
+      .visual {
+        height: 100%;
+      }
+      #map {
+        height: 95%;
+      }
+ 
+  body
+    #layout-header.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        main#main-content.mdl-layout__content
+          h2#title #{title}
+          |  
+          |     
+          li
+            | &#x8CC7;&#x6599;&#x4F86;&#x6E90;&#xFF1A;
+            a(href='http://data.gov.tw/') 政府資料開放平台
+          li
+            | 以最小統計區劃分
+          li
+            | 僅顯示2015 年有登革熱病例紀錄的各里區域
+          li
+            | 部分登革熱病例最小統計區與里別資料不一致，有些區域將未顯示。
+
+          h5#loading 資料載入中
+          |     
+          .visual
+            .ui.form
+              .inline.fields
+                .ui.selection.dropdown
+                  input(type='hidden', name='region', id="region")
+                  |  
+                  i.dropdown.icon
+                  |   
+                  .default.text 全市
+                  |   
+                  .menu
+                    .item(data-value='all') 全市
+            #map  
+          |      
+      script(type='text/javascript', src='http://d3js.org/d3.v3.min.js')
+      script()
+      script(type='text/javascript', src='http://d3js.org/topojson.v1.min.js')
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+      script(src='/bower_components/semantic/dist/semantic.min.js')
+      script(src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js')
+      |    
+      script(type='text/javascript', src='./javascripts/tainan.early_region_village.js')
+      footer.mdl-mini-footer
+        .mdl-mini-footer__left-section
+          | &copy; 2015 
+          a(href='http://medvis_members.cannerapp.com') Medvis開發團隊
+          |  |     
+          a(href='http://netdb.csie.ncku.edu.tw') NCKU-NetDB
+      script.
+        window.initMap(22.99, 120.2, 13);
+        window.initData(
+          '/data/tainan_smallregion.topo.json',
+          '/file/tainan_early_region_village.json'
+          );

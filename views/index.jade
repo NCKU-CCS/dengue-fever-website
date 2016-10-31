@@ -1,0 +1,452 @@
+html(lang='zh-tw')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |     
+    title &#x767B;&#x9769;&#x71B1;&#x6578;&#x64DA;&#x61C9;&#x7528;
+    // Add to homescreen for Chrome on Android
+    meta(name='mobile-web-app-capable', content='yes')
+    |     
+    link(rel='icon', sizes='192x192', href='images/touch/chrome-touch-icon-192x192.png')
+    // Add to homescreen for Safari on iOS
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    |     
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    |     
+    meta(name='apple-mobile-web-app-title', content='Material Design Lite')
+    |     
+    link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed.png')
+    // Tile icon for Win8 (144x144 + tile color)
+    meta(name='msapplication-TileImage', content='images/touch/ms-touch-icon-144x144-precomposed.png')
+    |     
+    meta(name='msapplication-TileColor', content='#3372DF')
+    // SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones
+    //
+      <link rel="canonical" href="http://www.example.com/">
+    link(href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en', rel='stylesheet')
+    |     
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    |     
+    link(rel='stylesheet', href='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.blue-pink.min.css')
+    |     
+    link(rel='stylesheet', href='./stylesheets/home.css')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-68710476-1', 'auto');
+        ga('send', 'pageview');
+ 
+  |   
+  body.mdl-demo.mdl-color--grey-100.mdl-color-text--grey-700.mdl-base
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      header.mdl-layout__header.mdl-layout__header--scroll.mdl-color--primary
+        .mdl-layout--large-screen-only.mdl-layout__header-row(style='background-color:#2571b6')
+        |         
+        .mdl-layout--large-screen-only.mdl-layout__header-row(style='background-color:#2571b6')
+          h3(style='font-size:40px') &#x767B;&#x9769;&#x71B1;&#x6578;&#x64DA;&#x61C9;&#x7528;
+        |         
+        .mdl-layout--large-screen-only.mdl-layout__header-row(style='background-color:#2571b6 ')
+        |         
+        .mdl-layout__tab-bar.mdl-js-ripple-effect(style='background-color:rgb(47,42,40)')
+          a.mdl-layout__tab.is-active(href='#visualization_work') 台南防疫資訊呈現
+          |           
+          a.mdl-layout__tab(href='#kao_visualization_work') 高雄防疫資訊呈現
+          |           
+          a.mdl-layout__tab(href='#public_info') &#x516C;&#x958B;&#x8CC7;&#x8A0A;&#x5448;&#x73FE;
+          |           
+          a.mdl-layout__tab(href='#sec_hub') &#x76F8;&#x95DC;&#x767B;&#x9769;&#x71B1;&#x5C08;&#x5340;
+      |       
+      main.mdl-layout__content
+        #visualization_work.mdl-layout__tab-panel.is-active
+          //  
+            section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+              header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+                img(src='./images/work_2.png')
+              |             
+              .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone(s='')
+                .mdl-card__supporting-text(style='rgb(167,182,194)')
+                  h4 &#x5316;&#x5B78;&#x9632;&#x6CBB;&#x6210;&#x6548;&#x5448;&#x73FE;
+                |               
+                .mdl-card__actions
+                  a.mdl-button(href='http://medvis.csie.ncku.edu.tw/dengue_trend/', target='_blank') &#x524D;&#x5F80;&#x67E5;&#x770B;
+            |           
+            section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+              header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+                img(src='./images/work_3.png')
+              |             
+              .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+                .mdl-card__supporting-text
+                  h4 &#x5316;&#x5B78;&#x9632;&#x6CBB;&#x6B63;&#x5411;&#x6210;&#x6548;&#x5206;&#x6790;
+                  |                 &#x5674;&#x85E5;&#x6709;&#x6C92;&#x6709;&#x6548;? 
+                  br
+                  | &#x6211;&#x5011;&#x5728;&#x5730;&#x5716;&#x4E0A;&#x6A19;&#x793A;&#x5674;&#x85E5;&#x8655;&#xFF0C;&#x9EDE;&#x9078;&#x5404;&#x500B;&#x5674;&#x85E5;&#x9EDE;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x4E0D;&#x540C;&#x8DDD;&#x96E2;&#x5167;14&#x5929;&#x7684;&#x767C;&#x75C5;&#x4EBA;&#x6578;&#x7D71;&#x8A08;&#xFF0C;&#x85C9;&#x6B64;&#x5F97;&#x77E5;&#x51FA;&#x5674;&#x85E5;&#x7684;&#x5BE6;&#x969B;&#x6548;&#x679C;&#x3002;
+                |               
+                .mdl-card__actions
+                  a.mdl-button(href='http://medvis.csie.ncku.edu.tw/drug_effect', target='_blank') &#x524D;&#x5F80;&#x67E5;&#x770B;
+            //
+              section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+                header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+                  img(src='./images/dengue_show.png')
+                |             
+                .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+                  .mdl-card__supporting-text
+                    h4 病例改善呈現服務
+                  |               
+                  .mdl-card__actions
+                    a.mdl-button(href='http://medvis.csie.ncku.edu.tw/dengue_show/') &#x524D;&#x5F80;&#x67E5;&#x770B;
+              |           
+            section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+              header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+                img(src='./images/public_3.png')
+              |             
+              .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+                .mdl-card__supporting-text
+                  h4 台南各里每週疫情查詢服務
+                  | （確診日期計算）
+                |               
+                .mdl-card__actions
+                  a.mdl-button(href='http://medvis.csie.ncku.edu.tw/village_rank/') &#x524D;&#x5F80;&#x67E5;&#x770B;
+            |           
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/inquire.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 依即時發病點反查2015年台南登革熱病例
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-2015-inquire') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/dengue_ratio.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2015年全市登革熱嚴重區域
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-serious-area') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/dengue_ratio_village.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2015年各里登革熱—早期發病區域
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-early-region-village') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/dengue_ratio_village.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2015年各里登革熱－嚴重區域
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-serious-area-village') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/dengue_ratio_village.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2015年雨後病例明顯上升區域
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-rain-rise-region') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+      
+    
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/class.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南村里疫別分類地圖
+                | （確診日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-village-dengue-class') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南登革熱熱區即時地圖
+                |                   &#x5229;&#x7528;&#x67D0;&#x5340;&#x6BB5;&#x5167;&#x7684;&#x767B;&#x9769;&#x71B1;&#x4E8B;&#x4EF6;&#xFF0C;&#x7D71;&#x8A08;7&#x5929;&#x5167;500&#x516C;&#x5C3A;&#x4EE5;&#x5167;&#x7684;&#x767B;&#x9769;&#x71B1;&#x4E8B;&#x4EF6;&#xFF0C;&#x8B93;&#x4F7F;&#x7528;&#x8005;&#x80FD;&#x77E5;&#x9053;&#x767B;&#x9769;&#x71B1;&#x7684;&#x71B1;&#x5340;&#x64F4;&#x6563;&#x72C0;&#x6CC1;&#x3002;&#x9EDE;&#x9078;&#x5730;&#x5716;&#xFF0C;&#x53EF;&#x9032;&#x4E00;&#x6B65;&#x770B;&#x51FA;&#x5404;&#x500B;&#x767B;&#x9769;&#x71B1;&#x4E8B;&#x4EF6;&#x767C;&#x751F;&#x7684;&#x5730;&#x5340;&#x3002; 
+                | (確診日期計算)
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-realtime-map') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南熱區動態變化地圖-發病日
+                | （發病日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-detail-dynamic') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |           
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南熱區動態變化地圖-確診日
+                | （確診日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-dynamic-diagnose') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |           
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/small_region.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南登革熱-最小統計區病例地圖
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-small-region') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |           
+         
+         
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/drug_geo.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南噴藥防治地圖
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./drug-geo') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |           
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/dengue_delay.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南延遲診斷熱區地圖
+                | 
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./dengue-delay') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |         
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南病例與噴藥動態變化地圖
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-dengue-drug') &#x524D;&#x5F80;&#x67E5;&#x770B;
+ 
+          |         
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 歷年台南熱區變遷地圖
+                | （發病日期計算 1998-2014
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-past-dengue') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |           
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南近5年登革熱病例
+                | （發病日期計算 2010-2014)
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./tainan-5-years') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |           
+       
+
+       
+          section.section--footer.mdl-grid
+        |         
+        #kao_visualization_work.mdl-layout__tab-panel
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/kaohsiung-2015-dengue.jpg')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2015年高雄熱區變遷地圖
+                | （確診日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./kaohsiung-2015-dengue') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+           section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/kaohsiung-2015-dengue.jpg')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2015年高雄熱區變遷地圖
+                | （發病日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./kaohsiung-2015-dengue-2') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_3.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 高雄村里疫別分類地圖
+                | （確診日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='/kao-village-dengue-class') &#x524D;&#x5F80;&#x67E5;&#x770B;
+ 
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/kao.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 2014年高雄熱區變遷地圖
+                | （發病日期計算）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./kaohsiung-2014-dengue') &#x524D;&#x5F80;&#x67E5;&#x770B;
+
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/kao.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 歷年高雄熱區變遷地圖
+                | （發病日期計算 1998-2013）
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='./kaohsiung-past-dengue') &#x524D;&#x5F80;&#x67E5;&#x770B;
+         
+          |   
+          section.section--footer.mdl-grid
+        |         
+        #public_info.mdl-layout__tab-panel
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_2.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 &#x53F0;&#x5357;&#x767B;&#x9769;&#x71B1;&#x52D5;&#x614B;&#x6563;&#x4F48;&#x5448;&#x73FE;
+                |                   &#x5229;&#x7528;&#x52D5;&#x614B;&#x5716;&#x8868;&#x4E26;&#x6839;&#x64DA;&#x6642;&#x9593;&#x905E;&#x79FB;&#xFF0C;&#x5448;&#x73FE;&#x767B;&#x9769;&#x71B1;&#x60A3;&#x8005;&#x5206;&#x5E03;&#x72C0;&#x6CC1;&#x3002;
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='http://real.taiwanstat.com/dengue-fever/', target='_blank') &#x524D;&#x5F80;&#x67E5;&#x770B;
+          |            
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/public_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 台南熱區變遷地圖
+                | 根據了即時登革熱資訊，增加了時間維度，看出2015年台南登革熱疫情熱區變遷狀況。          
+              |           
+              .mdl-card__actions
+                a.mdl-button(href='http://long.taiwanstat.com/dengue-animation/', target='_blank') 前往查看
+          |           
+          section.section--footer.mdl-grid
+        |           
+        |           
+        #sec_hub.mdl-layout__tab-panel
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/hub_1.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 &#x75BE;&#x75C5;&#x7BA1;&#x5236;&#x7F72;&#x767B;&#x9769;&#x71B1;&#x5C08;&#x5340;
+                |                 &#x885B;&#x751F;&#x798F;&#x5229;&#x90E8;&#x75BE;&#x75C5;&#x7BA1;&#x5236;&#x7F72;&#x8A2D;&#x7ACB;&#x4E86;&#x767B;&#x9769;&#x71B1;&#x5C08;&#x5340;&#xFF0C;&#x5167;&#x5BB9;&#x63D0;&#x4F9B;&#x6C11;&#x773E;&#x5F97;&#x77E5;&#x767B;&#x9769;&#x71B1;&#x76F8;&#x95DC;&#x8CC7;&#x8A0A;&#xFF0C;&#x50CF;&#x662F;&#x91AB;&#x5E2B;&#x5E38;&#x7528;&#x8CC7;&#x6E90;&#x3001;&#x5C31;&#x4F9D;&#x76F8;&#x95DC;&#x8CC7;&#x8A0A;&#x3001;&#x767B;&#x9769;&#x71B1;&#x4ECB;&#x7D39;&#x3001;Q&amp;A&#x7B49;&#x8CC7;&#x8A0A;&#x3002;
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='http://www.cdc.gov.tw/list.aspx?treeid=d315941f29223d38&nowtreeid=d315941f29223d38', target='_blank') &#x524D;&#x5F80;&#x7DB2;&#x7AD9;
+          |           
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/hub_2.gif')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 &#x6210;&#x529F;&#x5927;&#x5B78;&#x767B;&#x9769;&#x71B1;&#x9632;&#x75AB;&#x5C08;&#x5340;
+                |                 &#x6210;&#x5927;&#x91DD;&#x5C0D;&#x767B;&#x9769;&#x71B1;&#x9632;&#x6CBB;&#x8A2D;&#x7ACB;&#x5C08;&#x5340;&#x63D0;&#x4F9B;&#x6821;&#x5712;&#x9632;&#x75AB;&#x8CC7;&#x8A0A;&#x5206;&#x4EAB;&#xFF0C;&#x5167;&#x5BB9;&#x5305;&#x542B;&#x9632;&#x6CBB;&#x5BA3;&#x5C0E;&#x3001;&#x554F;&#x5377;&#x7D71;&#x8A08;&#x3001;&#x53F0;&#x5357;&#x75AB;&#x60C5;&#x5373;&#x6642;&#x8A0A;&#x606F;&#x3001;&#x76F8;&#x95DC;&#x9023;&#x7D50;&#x7B49;&#x8CC7;&#x8A0A;&#x3002;
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='http://web.ncku.edu.tw/files/11-1000-17008.php?Lang=zh-tw', target='_blank') &#x524D;&#x5F80;&#x7DB2;&#x7AD9;
+          |           
+          section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+            header.section__play-btn.mdl-cell.mdl-cell--3-col-desktop.mdl-cell--2-col-tablet.mdl-cell--4-col-phone.mdl-color--teal-100.mdl-color-text--white
+              img(src='./images/hub_3.png')
+            |             
+            .mdl-card.mdl-cell.mdl-cell--9-col-desktop.mdl-cell--6-col-tablet.mdl-cell--4-col-phone
+              .mdl-card__supporting-text
+                h4 &#x50B3;&#x67D3;&#x75C5;&#x7D71;&#x8A08;&#x8CC7;&#x6599;&#x67E5;&#x8A62;&#x7CFB;&#x7D71;
+                |                 &#x63D0;&#x4F9B;&#x53F0;&#x7063;&#x76F8;&#x95DC;&#x50B3;&#x67D3;&#x75C5;&#x8CC7;&#x6599;&#x67E5;&#x8A62;&#xFF0C;&#x5305;&#x542B;&#x767B;&#x9769;&#x71B1;&#x3001;&#x6D41;&#x611F;&#x3001;&#x8178;&#x75C5;&#x6BD2;&#x3001;&#x8179;&#x7009;&#x3002;
+              |               
+              .mdl-card__actions
+                a.mdl-button(href='http://nidss.cdc.gov.tw/ch/Default.aspx?op=4', target='_blank') &#x524D;&#x5F80;&#x7DB2;&#x7AD9;
+          |           
+          section.section--footer.mdl-grid
+        |        
+        footer.mdl-mega-footer
+          .mdl-mega-footer__left-section
+            | &copy; 2015 
+            a(href='http://medvis_members.cannerapp.com') MedVis Team
+            |  |     
+            a(href='http://netdb.csie.ncku.edu.tw') NCKU-NetDB
+          |   
+          .mdl-mega-footer--bottom-section
+            div(style='text-align: right')
+              | 
+            //
+              <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              </ul>
+    |     
+    script(src='https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js')
+
+

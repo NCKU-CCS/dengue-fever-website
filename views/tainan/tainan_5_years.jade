@@ -1,0 +1,50 @@
+extends ../layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/dynamic.css', type='text/css')
+    style.
+    body   
+      #layout-header.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        main#main-content.mdl-layout__content
+          h2#title #{title}
+          |     
+          ul
+            li 本網頁呈現以病例的發病日期為準
+          |   
+          .ui.form
+             .four.fields
+                .ui.selection.dropdown
+                  input.field(type='hidden', name='days', id="percentage")
+                  |  
+                  i.dropdown.icon
+                  |   
+                  .default.text 顯示近5年內資料
+                  |   
+                  .menu
+                    .item(data-value='0') 顯示2010年資料
+                    .item(data-value='1') 顯示2011年資料
+                    .item(data-value='2') 顯示2012年資料
+                    |     
+                    .item(data-value='3') 顯示2013年資料
+                    .item(data-value='4') 顯示2014年資料
+              
+          .visual
+            #map  
+          |    
+      
+      script(type='text/javascript', src='http://d3js.org/d3.v3.min.js')
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+      script(type='text/javascript', src='http://d3js.org/topojson.v1.min.js', charset='UTF-8')
+      script(src='/bower_components/semantic/dist/semantic.min.js')
+      script(src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js')
+      |    
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js')
+      |    
+      script(type='text/javascript', src='./javascripts/tainan.years.js', charset='UTF-8')
+      footer.mdl-mini-footer
+        .mdl-mini-footer__left-section
+          | &copy; 2015 
+          a(href='http://medvis_members.cannerapp.com') Medvis開發團隊
+          |  |     
+          a(href='http://netdb.csie.ncku.edu.tw') NCKU-NetDB
+        |   

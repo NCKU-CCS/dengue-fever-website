@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+*.pyc
+*/**.pyc
+*/*/__pycache__
+**/**.tsv
+*.tsv
+node_modules

@@ -1,0 +1,96 @@
+extends ../layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/dynamic.css', type='text/css')
+  body
+    #layout-header.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        main#main-content.mdl-layout__content
+          h2#title #{title}
+          |  
+          ul
+            li
+              | &#x8CC7;&#x6599;&#x4F86;&#x6E90;&#xFF1A;
+              a(href="http://data.gov.tw/node/21026") 政府資料開放平臺
+            li 本網頁以「發病日」為計算日期
+            li 備註：淺藍色為噴藥點，藍色區塊則為實際噴藥區域
+          |     
+          .visual
+            .ui.form
+              .inline.fields
+                label &#x71B1;&#x5340;&#x6642;&#x9593;&#x8A08;&#x7B97;&#xFF1A;
+                .field
+                  .ui.radio.checkbox
+                    input(type='radio', name='days', value='1', checked='checked')
+                    |             
+                    label 1天內
+                |         
+                .field
+                  .ui.radio.checkbox
+                    input(type='radio', name='days', value='3', checked='checked')
+                    |             
+                    label 3&#x5929;&#x5167;
+                |         
+                .field
+                  .ui.radio.checkbox
+                    input(type='radio', name='days', value='5')
+                    |             
+                    label
+                      | 5&#x5929;&#x5167;
+                      span.browser-note &#xFF08;&#x5EFA;&#x8B70;&#x4EE5;Chrome&#x3001;Firefox&#x986F;&#x793A;&#xFF09;
+            |     
+            span.date
+              | &#x65E5;&#x671F;&#xFF1A;
+              span.current
+            |     
+            #street-view
+              h4 點擊左側顯示街景圖
+            #map  
+            |     
+            .ui.slider.range(style='width:100%')
+              input(type='range', min='0', max='240', value='0', tabindex='0')
+              |       
+              span.ui.icon.buttons
+                button.ui.button.stepback
+                  i.step.backward.icon
+                |       
+                button.ui.button.play
+                  i.play.icon
+                |       
+                button.ui.button.pause
+                  i.pause.icon
+             #bar
+          |      
+
+      script(type='text/javascript', src='http://d3js.org/d3.v3.min.js')
+      script()
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+      script(src='/bower_components/semantic/dist/semantic.min.js')
+      script(src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js')
+      script(src='http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js')
+      |    
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js')
+      |    
+      script(type='text/javascript', src='http://d3js.org/topojson.v1.min.js', charset='UTF-8')
+      script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', charset='UTF-8')
+      script(type='text/javascript', src='/javascripts/vendor/three.min.js', charset='UTF-8')
+      script(type='text/javascript', src='/javascripts/vendor/GSVPano.js', charset='UTF-8')
+      script(type='text/javascript', src='/javascripts/vendor/hyperlapse.min.js', charset='UTF-8')
+      script(type='text/javascript', src='/javascripts/dynamic.js', charset='UTF-8')
+      script(type='text/javascript', src='/javascripts/bar.js', charset='UTF-8')
+      footer.mdl-mini-footer
+        .mdl-mini-footer__left-section
+          | &copy; 2015 
+          a(href='http://medvis_members.cannerapp.com') Medvis開發團隊
+          |  |     
+          a(href='http://netdb.csie.ncku.edu.tw') NCKU-NetDB
+      script.
+        window.initMap(22.99, 120.2, 14);
+        window.initDate('2015/08/01', '2015/10/02');
+        window.initData(
+          '/file/dynamic/data_v2.json', 
+          '/file/dynamic/drug_data.json', 
+          '/file/dynamic/bar_data_v2.json', 
+          '/file/dynamic/village_bar_data_v2.json', 
+          '/file/dynamic/tainan.topo.json',
+          '/file/prev_date_geo.geojson'
+          );
