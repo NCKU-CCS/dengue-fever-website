@@ -3,17 +3,19 @@
 Using Taiwan goverment open data, develop a web visualization website to assist dengue-fever prevention.
 
 
-## Develop
+## Usage
 
   Clone this repo, then
 
     $ npm install
-    $ npm install -g http-server
-    $ http-server -p 8000
+    $ npm start
   
-  Open your browser and go to http://localhost:8000
+  Open your browser and go to http://localhost:3000
   
 ## Update Data
 
-  - [tainan_scripts](https://github.com/NCKU-CCS/dengue-fever-website/tree/master/tainan_scripts)
-  - [kaohsiung_scripts] (https://github.com/NCKU-CCS/dengue-fever-website/tree/master/kaohsiung_scripts)
+* [tainan_scripts](https://github.com/NCKU-CCS/dengue-fever-website/tree/master/tainan_scripts)
+* [kaohsiung_scripts](https://github.com/NCKU-CCS/dengue-fever-website/tree/master/kaohsiung_scripts)
+
+## license
+MIT @theMosquitoMan team
